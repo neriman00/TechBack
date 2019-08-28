@@ -9,7 +9,7 @@ namespace TexnoGallery.Controllers
 {
     public class HomeController : Controller
     {
-        TexnoGalleryEntities db = new TexnoGalleryEntities();
+        texnoEntities db = new texnoEntities();
         
         public ActionResult Index()
         {
@@ -24,7 +24,14 @@ namespace TexnoGallery.Controllers
             };
             return View(defaultModel);
         }
-
+        public ActionResult SearchPro(string searchText)
+        {
+            var defaultModel = new DefaultViewModel
+            {
+                ProImage=db.ProductImage.Where(pr=>pr.baseImg==1 && pr.Product.SubCategory.Name.Contains(searchText)).Take(10).ToList(),
+            };
+            return View(defaultModel);
+        }
         public ActionResult About()
         {
             var defaultModel = new DefaultViewModel

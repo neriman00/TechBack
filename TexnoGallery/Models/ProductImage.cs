@@ -19,5 +19,6 @@ namespace TexnoGallery.Models
         public int ProductId { get; set; }
     
         public virtual Product Product { get; set; }
+        public Nullable<byte> baseImg { get; set; }
     }
 }

@@ -47,15 +47,15 @@ body {
     margin-top: 10px;
     padding-left: 10px; }
 
-.shopImg {
+.shopImg{
   border: 1px solid #ffc107;
-  background: white; }
-  .shopImg .shop-img {
-    width: 100%;
-    height: 100%; }
-  .shopImg .img-text {
+  background: white;    
+}
+
+.shopImg .img-text {
     text-align: center;
-    padding: 2.0em 1em; }
+    padding: 2.0em 1em;
+}
     .shopImg .img-text h6 {
       font-family: 'Quicksand', sans-serif;
       font-weight: bold; }

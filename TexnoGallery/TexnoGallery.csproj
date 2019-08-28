@@ -239,9 +239,6 @@
     <Compile Include="Models\SubCategory.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>db.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Users.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
@@ -357,13 +354,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\db.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>db.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\db.edmx.diagram">
-      <DependentUpon>db.edmx</DependentUpon>
-    </Content>
     <Content Include="css\about.css.map" />
     <Content Include="css\about.scss" />
     <Content Include="css\contact.css.map" />
@@ -375,6 +365,13 @@
     <Content Include="css\shop.scss" />
     <Content Include="css\style.css.map" />
     <Content Include="css\style.scss" />
+    <EntityDeploy Include="Models\db.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\db.edmx.diagram">
+      <DependentUpon>db.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -463,9 +460,11 @@
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Shared\ProductCategory.cshtml" />
     <Content Include="Views\Product\PcTopla.cshtml" />
+    <Content Include="Views\Home\SearchPro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\SearchPro\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

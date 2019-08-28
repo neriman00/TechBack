@@ -9,7 +9,7 @@ namespace TexnoGallery.Controllers
 {
     public class ProductController : Controller
     {
-        TexnoGalleryEntities db = new TexnoGalleryEntities();
+        texnoEntities db = new texnoEntities();
         // GET: Product
         public ActionResult Product()
         {
